@@ -84,7 +84,7 @@ function Education ({education, setEducation}) {
     
 
     return (
-        <div className='education'>
+        <div className='Education'>
             <div className='title'>
                 <h1>Education</h1>
                 <button onClick={handleClick}>{show ? <div>▼</div> : <div>➤</div>}</button>

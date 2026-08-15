@@ -17,7 +17,7 @@ function App() {
         <Education education={education} setEducation={setEducation}/>
         <Experience experience={experience} setExperience={setExperience}/>
       </div>
-      <div className='cv'>
+      <div>
         <Cv personal={personal} education={education} experience={experience}/>
       </div>
       

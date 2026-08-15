@@ -1,0 +1,62 @@
+.cv {
+    color: var(--cv-text-color);
+    margin: 3rem auto;
+    padding: 1.5rem;
+
+    background-color: var(--cv-background-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    min-height: 80vh;
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.cv > h1, .cv > h2 {
+    color: var(--cv-text-color);
+}
+.cv > h1 {
+    font-size: 2.5rem;
+}
+
+.personal_details {
+    display: flex;
+    width: 100%;
+
+    border-bottom: 2px solid black;
+
+    text-align: left;
+    gap:30px;
+}
+.personal_details > div {
+    display: flex;
+}
+
+.education_title, .experience_title{
+    border-bottom: 2px solid black;
+    width: 100%;
+
+    text-align: left;
+    margin-top: 1rem;
+}
+.education, .not_description {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.3rem;
+
+}
+.experience {
+    display: flex;
+    flex-direction: column;
+}
+.education_info, .experience_info {
+    text-align: left;
+}
+.education_status, .experience_status {
+    text-align: right;
+}
+.description {
+    text-align: left;
+}

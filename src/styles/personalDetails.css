@@ -1,0 +1,45 @@
+.Personal_details {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+    padding-top: 0;
+    text-align: left;
+    
+    background-color: var(--cv-background-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+}
+
+.Personal_details > .title {
+    font-size: 1.5rem;
+}
+
+label {
+    font-weight: bold;
+}
+input {
+    padding: 0.6rem;
+    background-color: var(--input-background-color);
+    color: var(--text--color);
+
+    border:none;
+    border-radius: 10px;
+
+    font-size: 1rem;
+
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+input:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    
+    transform: translateY(-1px);
+}
+input:focus {
+    outline: none;
+    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    
+    transform: translateY(-1px);
+}

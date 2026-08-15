@@ -95,7 +95,7 @@ function Experience ({experience, setExperience}) {
     
 
     return (
-        <div className='experience'>
+        <div className='Experience'>
             <div className='title'>
                 <h1>Experience</h1>
                 <button onClick={handleClick}>{show ? <div>▼</div> : <div>➤</div>}</button>
