@@ -1,0 +1,60 @@
+@import url("details.css");
+.Experience, .single_exp, .Education, .single_edu {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+    gap: 0.2rem;
+    padding-top: 0;
+    text-align: left;
+    
+    background-color: var(--container-background-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+
+    width: 80%;
+}
+
+.single_exp, .single_edu {
+    margin: 0.5rem;
+}
+.single_title, .single_title {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    align-items: center;
+}
+.remove, .add {
+    all: unset;
+    background: url('../assets/delete.svg') center / cover no-repeat;
+    height: 1.8rem;
+    width: 1.8rem;
+    margin: 0.5rem;
+    border-radius: 20%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.remove:hover, .add:hover {
+    scale: 1.1;
+    background-color: rgba(255, 28, 28, 0.8);
+}
+.add:hover {
+    scale: 1.1;
+    background-color: rgb(61, 181, 255);
+}
+.add {
+    background-image: url('../assets/add.svg');
+}
+
+.Experience > .title, .Education > .title{
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    padding-top: 0.7rem;
+}
+.Experience > .title >  button, .Education > .title > button{
+    height: 1.5rem;
+    width: 1.5rem;
+    align-self: center;
+}
+

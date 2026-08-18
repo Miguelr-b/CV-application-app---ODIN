@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import '../styles/education.css'
+import '../styles/complementary.css'
 
 function Education ({education, setEducation}) {
     const [show, setShow] = useState(false);
@@ -93,10 +93,10 @@ function Education ({education, setEducation}) {
             {show && 
                 <div>
                     {education.map((single, index) => {
-                        return <div>
-                            <div>
+                        return <div className='single_edu' key={index}>
+                            <div className='single_title'>
                                 <h3>School - {index}</h3> 
-                                <button onClick={(event) => handleRemoveEducation(event, index)}>remove education</button>
+                                <button className='remove' onClick={(event) => handleRemoveEducation(event, index)}></button>
                             </div>
 
                             <label htmlFor="school">school: </label>
@@ -116,7 +116,7 @@ function Education ({education, setEducation}) {
                         </div>
                     })}
 
-                    <button onClick={ handleNewEducation }>Add education</button>
+                    <button className='add' onClick={ handleNewEducation }></button>
                 </div>
             }
         </div>

@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import '../styles/personalDetails.css'
+import '../styles/details.css'
 
 /*{name: "", email: "", phone: "", address: ""} */
 function PersonalDetails({personal, setPersonal}) {

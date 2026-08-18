@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import '../styles/experience.css'
+import '../styles/complementary.css'
 
 function Experience ({experience, setExperience}) {
     const [show, setShow] = useState(false);
@@ -97,40 +97,40 @@ function Experience ({experience, setExperience}) {
     return (
         <div className='Experience'>
             <div className='title'>
-                <h1>Experience</h1>
+                <h1>Work Experience</h1>
                 <button onClick={handleClick}>{show ? <div>▼</div> : <div>➤</div>}</button>
             </div>
             
             {show && 
                 <div>
                     {experience.map((single, index) => {
-                        return <div>
-                            <div>
+                        return <div className='single_exp' key={index}>
+                            <div className='single_title'>
                                 <h3>Company - {index}</h3> 
-                                <button onClick={(event) => handleRemoveExperience(event, index)}>remove experience</button>
+                                <button className='remove' onClick={(event) => handleRemoveExperience(event, index)}></button>
                             </div>
 
-                            <label htmlFor="company">company: </label>
+                            <label htmlFor="company">Company: </label>
                             <input value={single.company} id="company" type="text" placeholder='company' onChange={(event) => handleCompanyChange(event, index)}/>
 
-                            <label htmlFor="position">position: </label>
+                            <label htmlFor="position">Position: </label>
                             <input value={single.position} id="position" type="text" placeholder='position' onChange={(event) => handlePositionChange(event, index)}/>
 
-                            <label htmlFor="start">start: </label>
+                            <label htmlFor="start">Start: </label>
                             <input value={single.start} id="start" type="text" placeholder='start' onChange={(event) => handleStartChange(event, index)}/>
 
-                            <label htmlFor="end">end: </label>
+                            <label htmlFor="end">End: </label>
                             <input value={single.end} id="end" type="text" placeholder='end' onChange={(event) => handleEndChange(event, index)}/>
 
-                            <label htmlFor="location">location: </label>
+                            <label htmlFor="location">Location: </label>
                             <input value={single.location} id="location" type="text" placeholder='location' onChange={(event) => handleLocationChange(event, index)}/>
 
-                            <label htmlFor="description">description: </label>
+                            <label htmlFor="description">Description: </label>
                             <input value={single.description} id="description" type="text" placeholder='description' onChange={(event) => handleDescriptionChange(event, index)}/>
                         </div>
                     })}
 
-                    <button onClick={ handleNewExperience }>Add experience</button>
+                    <button className='add' onClick={ handleNewExperience }></button>
                 </div>
             }
         </div>

@@ -6,7 +6,8 @@
     background-color: var(--cv-background-color);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     min-height: 80vh;
-    width: 500px;
+    width: 55%;
+    max-width: 850px;
 
     display: flex;
     flex-direction: column;
@@ -27,7 +28,8 @@
     border-bottom: 2px solid black;
 
     text-align: left;
-    gap:30px;
+    font-weight: bold;
+    justify-content: space-between;
 }
 .personal_details > div {
     display: flex;
@@ -57,6 +59,14 @@
 .education_status, .experience_status {
     text-align: right;
 }
+.date {
+    font-weight: bold;
+}
 .description {
     text-align: left;
+    margin: 0.3rem 0 0.7rem 0;
+}
+
+ul {
+    margin-left: 1.2rem;
 }

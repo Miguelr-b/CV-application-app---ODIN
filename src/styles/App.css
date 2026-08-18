@@ -1,6 +1,8 @@
 :root {
   --background-color: #F3F4F6;
   --text-color: #000;
+  --red-text-color: rgb(227, 0, 0);
+  --container-background-color: #FFFFFF;
 
   --cv-background-color: #FFFFFF;
   --cv-text-color: #000;
@@ -15,10 +17,15 @@
   letter-spacing: 0.18px;
   color-scheme: light dark;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    
-  }
+
+body.dark {
+  --background-color: #101828;
+  --text-color: #e0e0e0;
+  --red-text-color: #ff6b6b;
+  --container-background-color: #1E2939;
+  
+  
+  --input-background-color: #101828;
 }
 
 * {
@@ -50,11 +57,51 @@ h2 {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.5fr;
 
   gap:1.5rem;
-  margin: 4rem;
+  margin: 2rem;
   margin-top: 1rem;
+}
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sides {
+  display: flex;
+}
+.left_side {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.2rem;
+  margin-top: 2rem;
+}
+.left_side > button {
+  all: unset;
+  background-color: var(--container-background-color);
+  color: var(--text-color);
+  cursor:pointer;
+  padding: 1rem;
+  
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+.left_side > button:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    
+    transform: translateY(-1px);
+}
+button.clear {
+  color: var(--red-text-color);
 }
 
 .details {
@@ -63,5 +110,8 @@ h2 {
   gap: 1rem;
 
   margin-top: 2rem;
+  align-items: center;
+
+  width: 100%;
 }
 
