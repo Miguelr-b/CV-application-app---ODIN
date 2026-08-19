@@ -31,7 +31,7 @@ git clone [git@github.com:Miguelr-b/CV-application-app---ODIN.git](git@github.co
 2. Entre na pasta do projeto:
 
 ```bash
-cd NOME-DO-REPOSITORIO
+cd CV-application-app---ODIN
 
 ```
 
