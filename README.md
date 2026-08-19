@@ -1,51 +1,54 @@
 ```markdown
 # CV Application
 
-Um gerador de currículos dinâmico construído com React. Este é um projeto do módulo de React do [The Odin Project](https://www.theodinproject.com/).
+A dynamic resume generator built with React. This is a project from the React module of [The Odin Project](https://www.theodinproject.com/).
+It's a simple, work-in-progress project made just for practice.
 
 🔗 **[Live Preview](https://cvprojectodin.netlify.app)**
 
-## 🚀 Funcionalidades
+# Features
 
-* **Preview em Tempo Real:** O currículo é desenhado instantaneamente conforme o usuário preenche o formulário.
-* **Campos Dinâmicos:** Botões para adicionar e remover múltiplas seções de Educação e Experiência Profissional.
-* **Mock Data:** Botão "Load Example" que preenche o currículo com dados fictícios de um Engenheiro de Software para testes rápidos.
-* **Limpeza Rápida:** Botão "Clear Resume" para apagar todos os estados de uma só vez.
-* **Dark Mode:** Alternância entre temas claro e escuro integrados com as preferências do sistema.
-* **Responsividade:** Layout divide a tela em desktop e empilha formulário e preview em dispositivos móveis.
+* **Real-time Preview:** The resume updates instantly as you fill out the form.
+* **Dynamic Fields:** Buttons to easily add or remove multiple Education and Work Experience sections.
+* **Dark Mode:** Toggle between light and dark themes, which also syncs with your system preferences.
+* **Responsive Design:** A split-screen layout on desktop that neatly stacks the form and the preview on mobile devices.
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Built With
 
-* **React:** Gerenciamento de estado (`useState`), renderização condicional, renderização de listas (`.map`) e elevação de estado.
-* **CSS3:** Flexbox, CSS Grid, Variáveis globais (`:root`) e Media Queries.
+* **React:** State management (`useState`), conditional rendering, list rendering (`.map`), and lifting state up.
+* **CSS3:** Flexbox, CSS Grid, global variables (`:root`), and Media Queries.
 * **JavaScript (ES6+)**
 
-## 💻 Como rodar o projeto localmente
+## 💻 How to run it locally
 
-1. Clone o repositório:
+1. Clone the repository:
 ```bash
-git clone [git@github.com:Miguelr-b/CV-application-app---ODIN.git](git@github.com:Miguelr-b/CV-application-app---ODIN.git)
+git clone git@github.com:Miguelr-b/CV-application-app---ODIN.git
+
 
 ```
 
-2. Entre na pasta do projeto:
+2. Go to the project folder:
 
 ```bash
 cd CV-application-app---ODIN
 
+
 ```
 
-3. Instale as dependências:
+3. Install the dependencies:
 
 ```bash
 npm install
 
+
 ```
 
-4. Inicie o servidor de desenvolvimento:
+4. Start the development server:
 
 ```bash
 npm run dev
+
 
 ```
 
